@@ -1,40 +1,111 @@
-*{margin: 0;
-padding: 0;}
-body{
-    
-    background-image: url('backfull.gif') ;
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&family=Playball&family=Stylish&family=Tiro+Kannada:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
 }
-.container{
-    text-align: center;
+.sub{
+    background-image: url('fire2.gif');
+    background-repeat:repeat-x;
+}
+.main{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+body{
+    background-image: url('eid2022.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+   
+}
+.btn img{
+    
+width: 140px;
+
+
+}
+.fire{
+    background-image: url('fire2.gif');
+}
+.click{
+    margin-top: 350px;
+}
+.zoom-in-zoom-out {
+    
+    
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    whitesmoke 15%,
+    #56f894 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+    
+
+font-family: 'Tiro Kannada', serif;
+
 }
 
-.header h1{
-    margin-top: 25px;
-    background-color: rgba(120, 224, 143,0.6);
-    display: inline-block;
-    padding: 10px;
-    color: brown;
-    font-size: 30px;
-    border: 1px solid rgba(255,255,255,0.2) ;
-    border-radius: 25px;
-    font-family: 'Cookie', cursive;
-    margin-bottom: 10px;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-button{
-    margin-top: 10px;
-    background-color: lightblue;
-    width: 160px;
-    height: 60px;
-    border-radius: 25px;
-    color: red;
-    font-size: 24px;
-    font-weight: bold;
+@media screen and (max-width: 900px){
+    .click{
+        margin-top: 280px;
+    }
 }
-button:hover{
-    background-color: white;
-    color: black;
+@media screen and (max-width: 600px)
+{
+.animate-charcter{
+margin-top: 20px;
 }
-.btn a{
-    text-decoration: none;
+.btn{
+margin-bottom: 20px;
+}
 }
